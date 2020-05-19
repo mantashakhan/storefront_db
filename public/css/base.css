@@ -109,7 +109,7 @@ width: 15%;
 * {
     box-sizing: border-box;
   }
-  
+  //change wrap
   .wrap {
       overflow: hidden;
       height: 350px;
