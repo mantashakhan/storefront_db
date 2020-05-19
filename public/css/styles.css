@@ -8,65 +8,19 @@
     background: transparent;
 }
 
-.dropbtn {
-  width: 10em;
-  background-color: darkgrey;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border-radius: 0.5em;
-  cursor: pointer;
-}
-
-.dropbtn:hover, .dropbtn:focus {
-  background-color: black;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  width: 100%;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown a:hover {background-color: #ddd;}
-
-.show {display: block;}
-
 .img{
 width: 15%;
 }
 
 input {
-  background-color: seashell;
-  color: black;
+  background-color: darkgrey;
+  color: white;
   border-radius: 0.25em;
-  border:1px solid black;
-}
-
-input[type=text]:focus {
-  border: 3px solid #555;
 }
 
 button{
-background-color: seashell;
+background-color: grey;
 color: black;
-padding: 0.25em;
 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 border-radius: 0.25em;
 }
@@ -197,16 +151,18 @@ body{
 
 .deal{
     width: 75%;
+    transform: translate(-27%,-10%);
 }
 
-.homeproduct{
-width: 100%;
-}
 
 .container {
     display: grid;
+    position: absolute;
+    transform: translate(35%,155%);
     width: 100%;
     height: 100%;
+    max-width: 1500px;
+    max-height: 100px;
     grid-template-areas: "leftspace div1 div1 div2 rightspace"
     "leftspace div1 div1 div3 rightspace"
     "leftspace div4 div5 div6 rightspace"
@@ -262,6 +218,7 @@ width: 100%;
     padding: 6px 12px;
     display: inline-block;
     background-color:honeydew;
+    max-height: 350px;
   }
   .div5 {
     grid-area: div5;
@@ -269,6 +226,7 @@ width: 100%;
     padding: 6px 12px;
     display: inline-block;
     background-color: papayawhip;
+    max-height: 350px;
   }
   .div6 {
     grid-area: div6;
@@ -276,6 +234,7 @@ width: 100%;
     padding: 6px 12px;
     display: inline-block;
     background-color: lightcyan;
+    max-height: 350px;
   }
   .middlespace {
     grid-area: middlespace;
@@ -301,8 +260,14 @@ hr.divide{
 
 
 /*Start of banner animation don't touch*/
+
+* {
+  box-sizing: border-box;
+}
+
 .wrap {
     overflow: hidden;
+    height: 350px;
   }
   
   .scrolling-bg {
@@ -342,31 +307,42 @@ hr.divide{
     float:  left;
     top: 200px;
     left: 37%;
-    width:  500px
+    width:  500px;
     height: 500px;
 }
 
 .div4 .item{
-    height:400px;
-    width:400px;
-    left: 420px;
-    top: 1130px;
+  position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+    max-height: 250px;
+    transform: translate(0%,-75%);
 }
 
 .div5 .item{
-    height:400px;
-    width:400px;
-    left: 1070px;
-    top: 1130px;
+  position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+    max-height: 250px;
+    transform: translate(0%,-75%);
 }
 
 
 .div6 .item{
-    height:400px;
-    width:400px;
-    left: 1700px;
-    top: 1130px;
+  position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+    max-height: 250px;
+    transform: translate(0%,-75%);
 }
+
+
+.homeproduct{
+  width: 75%;
+  }
 
 .ad1{
     position:relative;
@@ -380,4 +356,17 @@ hr.divide{
   ul.topnav li input,
   ul.topnav li {float: none;
   width: 100%;
+}
+
+.countdown{
+  position: relative;
+  top: -50px;
+  font-size: large;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
 }
