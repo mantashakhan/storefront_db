@@ -65,8 +65,8 @@
 
 		
 
-
-<div id = "email" class="center">
+<section id="email" class="section--toggleable">
+<div class="center">
 		<h4>Change Email</h4>
     <br>
 		<form hieght="100" width="500">
@@ -77,9 +77,12 @@
 			<button type="submit" value="Submit" onclick="remove('email')">Submit</button>
 		</form>
 </div>
+</section>
 
-
-<div id = "password" class="center">
+<section id="password" class="section--toggleable">
+<div class="center">
+	<h4>Change Password</h4>
+	<br>
 	<form hieght="100" width="500">
 			<label for="currPass">Current Password:</label>
 			<input type="Password" id="currPass" name="currPass" required><br><br>
@@ -87,11 +90,11 @@
 			<input type="Password" id="newPass" name="newPass" required><br><br>
 			<button type="submit" value="submit" onclick="remove('password')">submit</button>
 		</form>
-
 </div>
+</section>
 
-
-<div id = "add" class="center">
+<section id="add" class="section--toggleable">
+<div class="center">
 	<h4>Add Payment Method</h4>
 	<br>
 	<form height="100" width="100">
@@ -134,10 +137,10 @@
 
 
 </div>
+</section>
 
-
-
-<div id = "change" class="center">
+<section id="change" class="section--toggleable">
+<div class="center">
 	<h4>Change Payment Method</h4>
 		<br>
 		<form hieght="100" width="100">
@@ -180,15 +183,15 @@
 
 
 </div>
+</section>
 
-
-
-<div id = "pastPurchases">
+<section id="pastPurchases" class="section--toggleable">
+<div class="center">
 	<center><h4>Past Purchases</h4></center>
 	<center><h3>We see you haven't purchased anything yet, visit our <a href="./product_page/product_prototype.html">Products Page</a></h3></center>
 
 </div>
-
+</section>
 
 </body>
 
@@ -196,15 +199,11 @@
 <script type="text/javascript">
 	
 	function display(ID) {
-		document.getElementById(ID).style.display = "block";
-
-	}
-
-	function remove(element_To_Remove) {
-		var element = element_To_Remove;
-		element.remove();
-	}
-
+                document.querySelectorAll(".section--toggleable").forEach((element) => {
+                    element.style.display = "none";
+                });
+                document.querySelector("#" + ID).style.display = "flex";
+            }
 </script>
 
 
