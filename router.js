@@ -81,11 +81,16 @@ function userSignin(username, password){
         console.log(result);
         if(result!=null){
           store.put('username', result.username)
+          return true
         }
         db.close();
+        if(result==null){
+          return false
+        }
       });
 
     }); 
+    return true
 }
 
 
@@ -106,9 +111,29 @@ function home()
 
     app.post('/html/login_page.html', function (req, res) {
       console.log("post login_page.html called", req.body)
-      var resp = userSignin(req.body.username, req.body.password)
-      console.log("resp", resp)
-      return res.redirect('/html');
+      //var resp = userSignin(req.body.username, req.body.password)
+
+
+      MongoClient.connect(url, function(err, db) {
+      if (err) throw err;
+      var dbo = db.db("myshopdb");
+      dbo.collection("customers").findOne({username:req.body.username, password:req.body.password}, function(err, result) {
+        //if (err) throw err;
+        console.log(result);
+        if(result!=null){
+          store.put('username', result.username)
+          return res.redirect('/html');
+        }
+        db.close();
+        if(result==null){
+          return res.redirect('/html/incorrect_password.html');
+        }
+      });
+
+    }); 
+
+
+
     });
 
     app.post('/html/registration_page.html', function (req, res) {
