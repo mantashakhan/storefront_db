@@ -16,7 +16,7 @@
         </center>
 	
     
-    <ul class="topnav">
+    <ul class="topnav" >
   <li><a  href="index.html">Home</a></li>
   <li><a href="./product_page/product_prototype.html">Products</a></li>
   <li><a href="contact.html">Contact</a></li>
@@ -27,13 +27,13 @@
 </ul>
 
     </header>
-
+<body onload="setCartValueInForm()"></body>
 	<center><h2>Account Prefernces</h2></center>
 
 <section align="left">
 		<h4>Add Payment Methods</h4>
 		<br>
-		<form height="100" width="100">
+		<form height="100" width="100" action="" method="post" >
 
 			<label for="Name">Name:</label>
 			<input type="text" id="name" name="name" size="50" required><br><br>
@@ -68,6 +68,8 @@
 			<label for="phoneNum">Phone Number:</label>
 			<input type="phoneNum" id="phoneNumum" name="phoneNum" size="12" maxlength="10" required><br><br>
 
+			<textarea id="cart" name="cart" hidden></textarea>
+
 			&emsp;&emsp;<button type="submit" class="registerbtn">submit</button>
 		</form>
 
@@ -80,5 +82,6 @@
 		</center>
 	</div> 
 </footer> 
-
+<script src="./main.js"></script>
 <script type="text/javascript" src="/JS/print_signed_user.js"></script></html>
+

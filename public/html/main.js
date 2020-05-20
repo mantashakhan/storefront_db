@@ -16,6 +16,19 @@ function addToCart(name, cost, image){
 }	
 
 
+function setCartValueInForm(){
+
+	var myCart = localStorage.getItem("myCart")
+	console.log("setCartValueInForm called", myCart)
+	if(myCart==null || myCart=="null"){
+		//myCart = []	
+	}else{
+		//myCart = JSON.parse(myCart)
+	}
+	document.getElementById('cart').value=myCart;
+
+}
+
 function storeCreditCardDetails(){
 
 	var payment = document.getElementById("payment").value

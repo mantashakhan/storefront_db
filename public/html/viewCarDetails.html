@@ -45,6 +45,9 @@
     </center>
 	<div id="details">
 	</div>
+  <h1>Cart Details</h1>
+  <div id="item_details">
+  </div>
 		
 </body>
 
@@ -78,3 +81,38 @@
   </footer> 
   
   <script type="text/javascript" src="/JS/print_signed_user.js"></script></html>
+
+
+  
+  <script type="text/javascript">
+    let urla="http://localhost:3000/get_checkout_details";
+        fetch(urla).then(response => response.json())
+        .then( (result) => {
+          result = result.checkout_details
+            console.log('success:', result)
+            
+            var previewDetails = ""
+            previewDetails+= "Name "+result.name+"<br>"
+            previewDetails+= "Email "+result.Email+"<br>"
+            previewDetails+= "Address "+result.Address+"<br>"
+            previewDetails+= "House "+result.House+"<br>"
+            previewDetails+= "State "+result.State+"<br>"
+            previewDetails+= "Zip "+result.zip+"<br>"
+            previewDetails+= "phoneNum "+result.phoneNum+"<br>"
+            previewDetails+= "addCreditNum "+result.addCreditNum+"<br>"
+            previewDetails+= "secureCode "+result.secureCode+"<br>"
+
+            document.getElementById('details').innerHTML = previewDetails
+            
+            cart = JSON.parse(result.cart)
+            console.log(cart)
+            var item_details = ""
+            for (var i = cart.length - 1; i >= 0; i--) {
+              item_details+= cart[i].name + " ("+ cart[i].cost+")"+"<br>"
+            }
+
+            document.getElementById('item_details').innerHTML = item_details
+        })
+        .catch(error => console.log('error:', error));
+
+  </script>
