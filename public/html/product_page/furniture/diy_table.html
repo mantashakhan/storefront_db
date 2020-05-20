@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Welcome to Nook's Cranny!</title> 
-        <link href="../../../css/styles.css" rel="stylesheet"type="text/css">
+        <link href="../../../css/productstyles.css" rel="stylesheet"type="text/css">
+        <link href="../../../css/product.css" rel="stylesheet" type = "text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <header>
@@ -26,42 +27,63 @@
     </header>
   
     <body>
-  <center>
-  <p>Cute DIY Table<p>
-        <img class="img" src ="../../../products/furniture/diy_table.png">
-         <img class="img" src = "../../../products/5_star.png" >
-     </center>
- 
-<div class="product-description">
-        <p>What will you craft? <br>
-         A net? A rod? An axe? <br>
-        Or maybe... <br>
-        37 stupid egg recipes?</p>
-    </div>
-
-    <!--CHANGE PRICING HERE-->
-    <div class="pricing">
-        <br>
-        <p>7,000 Bells</p>
-    </div>
-
-    <div class="cart">
-        <div class = "addToCart">
-			<form action="../../shopping_cart.html">
-			<input type="submit" value="Add to Cart" onclick="addToCart('Cute DIY Table', '7000', '../products/furniture/diy_table.png')" />
-			</form>
-			
-
+        <div class="wrap">
+            <div class="scrolling-bg"></div>
+        </div>
+        
+           <!-- GRIDS START HERE -->
+           <div class="container">
+        
+            <!--PRODUCT NAME-->
+            <div class="product-name">
+                <b>Cute DIY Table</b>
             </div>
-    </div>
-<br>
-    <div class="advertisement">
-        buy animal crossing new horizons for the nintendo switch
-        <br>
-        and also xenoblade chronicles definitive edition
-        <br>
-        also for the nintendo switch
-    </div>
+        
+            <!--STAR RATING-->
+            <div class = "placeholder1">
+                <center>
+                <img src = "../../../products/5_star.png" height = "85" width = "500">
+                </center>
+            </div>
+        
+            <!--PRODUCT IMAGE-->
+            <div class="product">
+                <br>
+                <img src ="../../../products/furniture/diy_table.png" height = "500" width = "500">
+            </div>
+        
+            <!--CHANGE DESCRIPTION HERE-->
+            <div class="product-description">
+                <p>What will you craft? <br>
+                 A net? A rod? An axe? <br>
+                Or maybe... <br>
+                37 stupid egg recipes?</p>
+            </div>
+        
+            <!--CHANGE PRICING HERE-->
+            <div class="pricing">
+                <br>
+                <p>7,000 Bells</p>
+            </div>
+        
+            <div class="cart">
+                <div class = "addToCart"
+                    <form action="../shopping_cart.html">
+                    <input type="submit" value="Add to Cart"/>
+                    </form>
+        
+                    </div>
+            </div>
+        
+            <!--CHANGE ADS HERE-->
+            <div class="advertisement">
+                buy animal crossing new horizons for the nintendo switch
+                <br>
+                and also xenoblade chronicles definitive edition
+                <br>
+                also for the nintendo switch
+            </div>
+          </div>
     </body>
 </div>
 
@@ -77,4 +99,4 @@
 
 
 
-<script src="../../main.js"></script><script type="text/javascript" src="/JS/print_signed_user.js"></script></html>
+</html>
