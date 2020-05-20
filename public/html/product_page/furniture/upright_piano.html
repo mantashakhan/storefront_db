@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Welcome to Nook's Cranny!</title> 
-        <link href="../../../css/styles.css" rel="stylesheet"type="text/css">
+        <link href="../../../css/productstyles.css" rel="stylesheet"type="text/css">
         <link href="../../../css/product.css" rel="stylesheet" type = "text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
@@ -26,42 +26,59 @@
 
     </header>
     <body>
-  <center>
-  <p>Upright Piano<p>
-        <img class="img" src ="../../../products/furniture/upright_piano.png">
-         <img class="img" src = "../../../products/5_star.png" >
-     </center>
- 
-<!--CHANGE DESCRIPTION HERE-->
- <div class="product-description">
-        <p>It'd be worrying if it<br>
-        wasn't upright.</p>
-    </div>
-
-    <!--CHANGE PRICING HERE-->
-    <div class="pricing">
-        <p>53,000 Bells</p>
-    </div>
-
-
-    <div class="cart">
-        <div class = "addToCart">
-			<form action="../../shopping_cart.html">
-			<input type="submit" value="Add to Cart" onclick="addToCart('Upright Piano', '53000', '../products/furniture/upright_piano.png')" />
-			</form>
-			
-
+        <div class="wrap">
+            <div class="scrolling-bg"></div>
+        </div>
+        
+           <!-- GRIDS START HERE -->
+           <div class="container">
+        
+            <!--PRODUCT NAME-->
+            <div class="product-name">
+                <b>Upright Piano</b>
             </div>
-    </div>
-<br>
-    <div class="advertisement">
-        buy animal crossing new horizons for the nintendo switch
-        <br>
-        and also xenoblade chronicles definitive edition
-        <br>
-        also for the nintendo switch
-    </div>
-    </body>
+        
+            <!--STAR RATING-->
+            <div class = "placeholder1">
+                <center>
+                <img src = "../../../products/5_star.png" height = "85" width = "500">
+                </center>
+            </div>
+        
+            <!--PRODUCT IMAGE-->
+            <div class="product">
+                <img src ="../../../products/furniture/upright_piano.png"height = "500" width = "500">
+            </div>
+        
+            <!--CHANGE DESCRIPTION HERE-->
+            <div class="product-description">
+                <p>It'd be worrying if it<br>
+                wasn't upright.</p>
+            </div>
+        
+            <!--CHANGE PRICING HERE-->
+            <div class="pricing">
+                <p>53,000 Bells</p>
+            </div>
+        
+            <div class="cart">
+                <div class = "addToCart"
+                    <form action="../../shopping_cart.html">
+                    <input type="submit" value="Add to Cart"/>
+                    </form>
+        
+                    </div>
+            </div>
+        
+            <!--CHANGE ADS HERE-->
+            <div class="advertisement">
+                buy animal crossing new horizons for the nintendo switch
+                <br>
+                and also xenoblade chronicles definitive edition
+                <br>
+                also for the nintendo switch
+            </div>
+          </div>
 </div>
 
 </div>
@@ -76,4 +93,4 @@
   </footer> 
 
 
-<script src="../../main.js"></script><script type="text/javascript" src="/JS/print_signed_user.js"></script></html>
+</html>
