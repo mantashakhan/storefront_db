@@ -25,7 +25,7 @@
 </ul>
 
     </header>
-       <body>
+    <body>
         <div class="wrap">
             <div class="scrolling-bg"></div>
         </div>
@@ -35,7 +35,7 @@
         
             <!--PRODUCT NAME-->
             <div class="product-name">
-                <b>Rock-climbing Wall</b>
+                <b>Office Wall</b>
             </div>
         
             <!--STAR RATING-->
@@ -48,26 +48,28 @@
             <!--PRODUCT IMAGE-->
             <div class="product">
                 <br>
-                <img src ="../../../products/wallpapers/rock_climbing_wall.png" height = "500" width = "500">
+                <img src ="../../../products/wallpapers/office_wall.png" height = "500" width = "500">
             </div>
         
             <!--CHANGE DESCRIPTION HERE-->
             <div class="product-description">
-                <p>Rocks sold separately.
-                </p>
+                <p>Pretend you're not <br>
+                in quarantine by making <br>
+                 it look like you're still <br>
+                in the office.</p>
             </div>
         
             <!--CHANGE PRICING HERE-->
             <div class="pricing">
+                <br>
                 <p>3,000 Bells</p>
             </div>
         
             <div class="cart">
-                <div class = "addToCart"
-                    <form action="../shopping_cart.html">
-                    <input type="submit" value="Add to Cart"/>
-                    </form>
-        
+                <div class = "addToCart">
+              <form action="../../shopping_cart.html">
+              <input type="submit" value="Add to Cart" onclick="addToCart('Office Wall', '3000', '../products/wallpapers/office_wall.png')" />
+              </form>
                     </div>
             </div>
         
@@ -82,7 +84,6 @@
           </div>
     </body>
 </div>
-  
 <footer>
     <div class="Navigation">
           <center>
@@ -92,6 +93,7 @@
           </center>
       </div> 
   </footer> 
+
 
 
 </html>
