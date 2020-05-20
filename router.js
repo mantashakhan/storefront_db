@@ -40,6 +40,17 @@ function createCollections(){
       });
     }); 
 
+    MongoClient.connect(url, function(err, db) {
+      if (err) throw err;
+      var dbo = db.db("myshopdb");
+      dbo.createCollection("customers_checkouts", function(err, res) {
+        if (err) throw err;
+        console.log("customers_checkouts Collection created!");
+        db.close();
+      });
+    }); 
+    
+
 }
 
 createCollections()
@@ -109,6 +120,11 @@ function home()
         res.json({username: store.get('username')});
     })
 
+    app.get('/get_checkout_details',(req,res)=>{
+        //res.sendFile(__dirname +"/views/test.html",);
+        res.json({checkout_details: store.get('checkout_details')});
+    })
+
     app.post('/html/login_page.html', function (req, res) {
       console.log("post login_page.html called", req.body)
       //var resp = userSignin(req.body.username, req.body.password)
@@ -133,6 +149,27 @@ function home()
     }); 
 
 
+
+    });
+
+
+
+    app.post('/html/addPaymentMethod.html', function (req, res) {
+      console.log("post addPaymentMethod.html called", req.body)
+      //var resp = userSignin(req.body.username, req.body.password)
+      MongoClient.connect(url, function(err, db) {
+      if (err) throw err;
+      var dbo = db.db("myshopdb");
+      var toInsert = req.body//JSON.parse(req.body)
+      dbo.collection("customers_checkouts").insertOne(toInsert, function(err, res) {
+        if (err) throw err;
+        console.log("Inserted", toInsert);
+        store.put('checkout_details', toInsert)
+        db.close();
+       
+      });
+    }); 
+       return res.redirect('/html/viewCarDetails.html');
 
     });
 
