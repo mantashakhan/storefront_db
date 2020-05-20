@@ -1,3 +1,26 @@
+button {
+color: black;
+background-color: steelblue !important;
+  transition-duration: 0.5s;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+button:hover {
+  background-color: yellow;
+  color: white;
+opacity: 1;
+}
+a{
+    color: midnightblue;
+    text-decoration: underline;
+    font-size: 25px;
+    font-family: Helvetica;
+}
+
+a:hover {
+    text-shadow: 2px 2px 8px white;
+  }
 * {
   margin: 0;
   padding: 0;
