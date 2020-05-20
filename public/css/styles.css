@@ -31,7 +31,6 @@ input {
 button {
 color: black;
 background-color: steelblue !important;
-  transition-duration: 0.5s;
   border-radius: 5px;
   padding: 5px;
 }
