@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Welcome to Nook's Cranny!</title> 
-        <link href="../../../css/styles.css" rel="stylesheet"type="text/css">
+        <link href="../../../css/productstyles.css" rel="stylesheet"type="text/css">
+        <link href="../../../css/product.css" rel="stylesheet" type = "text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <header>
@@ -24,45 +25,64 @@
 </ul>
 
     </header>
-    <body>
-  <center>
-  <p>Office Wall<p>
-        <img class="img" src ="../../../products/wallpapers/office_wall.png">
-         <img class="img" src = "../../../products/5_star.png" >
-     </center>
- 
-<div class="product-description">
-        <p>Pretend you're not <br>
-        in quarantine by making <br>
-         it look like you're still <br>
-        in the office.</p>
-    </div>
-
-    <!--CHANGE PRICING HERE-->
-    <div class="pricing">
-        <br>
-        <p>3,000 Bells</p>
-    </div>
-
-    <div class="cart">
-        <div class = "addToCart">
-      <form action="../../shopping_cart.html">
-      <input type="submit" value="Add to Cart" onclick="addToCart('Office Wall', '3000', '../products/wallpapers/office_wall.png')" />
-      </form>
-      
-
+       <body>
+        <div class="wrap">
+            <div class="scrolling-bg"></div>
+        </div>
+        
+           <!-- GRIDS START HERE -->
+           <div class="container">
+        
+            <!--PRODUCT NAME-->
+            <div class="product-name">
+                <b>Rock-climbing Wall</b>
             </div>
-    </div>
-<br>
-    <div class="advertisement">
-        buy animal crossing new horizons for the nintendo switch
-        <br>
-        and also xenoblade chronicles definitive edition
-        <br>
-        also for the nintendo switch
-    </div>
+        
+            <!--STAR RATING-->
+            <div class = "placeholder1">
+                <center>
+                <img src = "../../../products/5_star.png" height = "85" width = "500">
+                </center>
+            </div>
+        
+            <!--PRODUCT IMAGE-->
+            <div class="product">
+                <br>
+                <img src ="../../../products/wallpapers/rock_climbing_wall.png" height = "500" width = "500">
+            </div>
+        
+            <!--CHANGE DESCRIPTION HERE-->
+            <div class="product-description">
+                <p>Rocks sold separately.
+                </p>
+            </div>
+        
+            <!--CHANGE PRICING HERE-->
+            <div class="pricing">
+                <p>3,000 Bells</p>
+            </div>
+        
+            <div class="cart">
+                <div class = "addToCart"
+                    <form action="../shopping_cart.html">
+                    <input type="submit" value="Add to Cart"/>
+                    </form>
+        
+                    </div>
+            </div>
+        
+            <!--CHANGE ADS HERE-->
+            <div class="advertisement">
+                buy animal crossing new horizons for the nintendo switch
+                <br>
+                and also xenoblade chronicles definitive edition
+                <br>
+                also for the nintendo switch
+            </div>
+          </div>
     </body>
 </div>
+  
 <footer>
     <div class="Navigation">
           <center>
@@ -74,5 +94,4 @@
   </footer> 
 
 
-
-<script src="../../main.js"></script><script type="text/javascript" src="/JS/print_signed_user.js"></script></html>
+</html>
