@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Welcome to Nook's Cranny!</title> 
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="../../css/pstyles.css" />
+        <script src="../../JS/store.js" async></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <center> <!--Centers the Logo-->
+                   <a href="../index.html"> <!--Redirect to index.html-->
+                       <img class="logo" src="../../images/frontpage/logo.png" alt="Nook's Cranny" height >
+                   </a>
+           </center>
+       
+           <ul class="topnav">
+         <li><a href="../index.html">Home</a></li>
+         <li><a class="active" href="../product_prototype.html">Products</a></li>
+         <li><a class="right" href="../contact.html">Contact</a></li>
+         <button class="froggybutton" onclick="document.location='furniture/froggy_chair.html'">Feeling Froggy?</button>
+         <li class="right"><a href="../shopping_cart.html"><img class="cart" src="../../../images/cart.png" alt="Cart"></a></li>
+         <li class="right"><a href="../login_page.html">Log In</a></li>
+         <li class="right"><input type="text" placeholder ="Search..."> </li>
+       </ul>
+       
+           </header>
+           <div class="wrap">
+            <div class="scrolling-bg"></div>
+        </div>
+
+<center>
+        <section class="container content-section">
+            <h1 style="font-size:100px">Products</h1>
+            <div class="shop-items">
+                <div class="item">
+                    <span class="title">Froggy Chair</span>
+                    <img class="image" src="../../products/furniture/froggy_chair.png">
+                    <div class="details">
+                        <span class="price">$1400.00</span>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="addToCart('Froggy Chair', '1400', '')">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <span class="title">Upright Piano</span>
+                    <img class="image" src="../../products/furniture/upright_piano.png">
+                    <div class="details">
+                        <span class="price">$53000.00</span>
+                        <button class="btn btn-primary shop-item-button"type="button" onclick="addToCart('Upright Piano', '53000', '')">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <span class="title">Cute DIY Table</span>
+                    <img class="image" src="../../products/furniture/diy_table.png">
+                    <div class="details">
+                        <span class="price">$7000.00</span>
+                        <button class="btn btn-primary shop-item-button"type="button" onclick="addToCart('Cute DIY Table', '7000', '')">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <span class="title">DJ Cap</span>
+                    <img class="image" src="../../products/clothing/djcap.png">
+                    <div class="details">
+                        <span class="price">$770.00</span>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="addToCart('DJ Cap', '770', '')">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <span class="title">Hotdog Costume</span>
+                    <img class="image" src="../../products/clothing/hotdog_costume.png">
+                    <div class="details">
+                        <span class="price">$1100.00</span>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="addToCart('Hotdog Costume', '1100', '')">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <span class="title">Funny Glasses</span>
+                    <img class="image" src="../../products/clothing/funny_glasses.png">
+                    <div class="details">
+                        <span class="price">$770.00</span>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="addToCart('Funny Glasses', '770', '')">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <span class="title">Boxing Ring Mat</span>
+                    <img class="image" src="../../products/flooring/boxing_ring_mat.png">
+                    <div class="details">
+                        <span class="price">$3000.00</span>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="addToCart('Boxing Ring Mat', '3000', '')">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <span class="title">Cloud Flooring</span>
+                    <img class="image" src="../../products/flooring/cloud_flooring.png">
+                    <div class="details">
+                        <span class="price">$3000.00</span>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="addToCart('Cloud Flooring', '3000', '')">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <span class="title">Earth Rug</span>
+                    <img class="image" src="../../products/flooring/earth_rug.png">
+                    <div class="details">
+                        <span class="price">$1500.00</span>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="addToCart('Earth Rug', '1500', '')">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <span class="title">Basic Wall</span>
+                    <img class="image" src="../../products/wallpapers/basic_wall.png">
+                    <div class="details">
+                        <span class="price">$600.00</span>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="addToCart('Basic Wall', '600', '')">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <span class="title">Iceberg Wall</span>
+                    <img class="image" src="../../products/wallpapers/iceberg_wall.png">
+                    <div class="details">
+                        <span class="price">$600.00</span>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="addToCart(Iceberg Wall'', '600', '')">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <span class="title">Rock Climbing Wall</span>
+                    <img class="image" src="../../products/wallpapers/rock_climbing_wall.png">
+                    <div class="details">
+                        <span class="price">$3000.00</span>
+                        <button class="btn btn-primary shop-item-button" type="button" onclick="addToCart('Rock Climbing Wall', '3000', '')">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+</center>
+<br><br>
+        <section class="container content-section">
+            <center>
+            <h1 style="font-size:100px">Cart</h1>
+        </center>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="quantity cart-header cart-column">  QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="total-price">$0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">Complete Order</button>
+            <a href="../addPaymentMethod.html" class="btn btn-primary btn-purchase">Checkout</a>
+        </section>
+ <footer>
+    <div class="Navigation">
+          <center>
+              <font size = "50"> <a href="../faq.html">FAQ</a> </font>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;                          
+              <font size = "50"> <a href="../about.html">About</a> </font>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+              <font size = "50"><a href="../preferences.html">Preferences</a> </font>
+          </center>
+      </div> 
+  </footer> 
+    </body>
+    <script src="../main.js"></script>
+</html>
